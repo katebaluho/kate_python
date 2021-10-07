@@ -26,3 +26,5 @@ odd.append(numbers[6])
 odd.append(numbers[7])
 odd.append(numbers[9])
 print(odd)
+
+

@@ -16,5 +16,4 @@ text = """@*гда я п^ижимал тебя к г^уди св*ей-
 crypto_keys = (("К", "@",), ("р", "^",), (",", "-"), ("c", "$"), ("О", "&",), ("Н", "+"), ("о", "*"))
 
 encrypted_text = text.replace(crypto_keys[0][1], crypto_keys[0][0]).replace(crypto_keys[1][1], crypto_keys[1][0]).replace(crypto_keys[2][1], crypto_keys[2][0]).replace(crypto_keys[3][1], crypto_keys[3][0]).replace(crypto_keys[4][1], crypto_keys[4][0]).replace(crypto_keys[5][1], crypto_keys[5][0]).replace(crypto_keys[6][1], crypto_keys[6][0])
-
 print(encrypted_text)
