@@ -12,35 +12,24 @@ while count_error > 0:
         count_error -= 1
         print(f'Sorry, try enter a number. You have {count_error} attempts to enter')
         continue
-    elif int(month) > 12 or int(month) < 1:
+
+    month = int(month)
+    print(type(month))
+
+    if month > 12 or month < 1:
         count_error -= 1
         print(f'Enter correct month number. You have {count_error} attempts to enter')
         continue
-    else: break
+    else:
+        break
 
 print("Ok, number month ", month)
 
-seasons = (
-    ('spring', '2/3/4'),
-    ('summer', '5/6/7'),
-    ('autumn', '8/9/10'),
-    ('winter', '11/12/1')
-)
-
-name_season = ''
-j = 0
-while j < len(seasons):
-    if  seasons[j][1].count(month):
-        name_season = seasons[j][0]
-        break
-    j += 1
-
-print(f'Month {month} is {name_season}')
+seasons = ('spring', 'summer', 'autumn', 'winter')
+print(f'Month {month} is {seasons[int(month / 3)-1]}')
 
 
-
-
-
-
-
-
+# print(3/3, 4/3, 5/3)
+# print(6/3, 7/3, 8/3)
+# print(9/3, 10/3, 11/3)
+# print(12/3, 1/3, 2/3)

@@ -11,7 +11,7 @@
 
 user_number = input('Введите элементы списка через пробел: ')
 elements = user_number.split(' ')
-print(elements)  # ['4', '5', '6', 'h', 'j', 'h', 'k', 'l', '0']
+print(elements)
 
 reverse_list = []
 i = 0
@@ -20,6 +20,6 @@ while i < len(elements):
     reverse_list += pair[::-1]
     i += 2
 
-print(reverse_list)  #['5', '4', 'h', '6', 'h', 'j', 'l', 'k', '0']
+print(reverse_list)
 
 
