@@ -1,3 +1,4 @@
+from random import random
 """
 Дано 2 Матрицы
 Необходимо получить произведение данных матриц
@@ -8,7 +9,8 @@
 #     [3,6,3],
 #     [4,4,6]
 # ]
-#
+
+
 # matrix2 = [
 #     [1,2,2],
 #     [5,1,5],
@@ -17,9 +19,7 @@
 
 count_rows_matrix1 = input('Enter the numbers of rows of the matrix A: ')
 count_columns_matrix = input('Enter the numbers of columns of the matrix A and B: ')
-count_rows_matrix1 = input('Enter the numbers of rows of the matrix B: ')
-
-matrix1
+count_rows_matrix2 = input('Enter the numbers of rows of the matrix B: ')
 
 
 
