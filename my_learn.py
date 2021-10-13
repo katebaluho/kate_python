@@ -69,3 +69,22 @@ templates = (
 )
 
 print(templates[dict_2["age"] < 7].format(name = dict_2["name"], surname = dict_2["surname"]))
+
+
+
+# Нужно найти след матрицы(сумму элементов главной диагонали), 
+# при этом размер матрицы вводит пользователь,и саму матрицу заполнять случайными числами.
+
+# import random  
+ 
+# def creatArray():
+#     print('Введите первый индекс матрицы: ')
+#     x = int(input())
+#     print('Введите второй индекс матрицы: ')
+#     y = int(input())
+#     return [[random.randint(0,100) for i in range(x)] for j in range(y)]
+ 
+# def sunction(array):
+#     return sum([array[i][i] for i,_ in enumerate(array) if i < len(array[0])])
+
+# print("Сумма элементов ",sunction(creatArray()))
