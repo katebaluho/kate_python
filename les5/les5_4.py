@@ -7,35 +7,18 @@
 """
 
 
-# def in_power(number, x):
-#     return sum([number for i in range(x)])
-
-# def  my_func(x, y):
-#     two =  sum([x for i in range(x)]) #число которое получается умножаем на х вторая степень
-#     counter = 2
-#     result = two
-#     while counter <= y:
-#         result = in_power(result,x)
-#         counter+=1
-#         print(result, counter)
-
-
 def in_power(number, x):
     return sum([number for i in range(x)])
 
-def  my_func(x, y):
 
+def my_func(x, y):
     number_in_power = x
     counter = 1
     while counter < y:
-        number_in_power = in_power(number_in_power,x)
-        counter+=1
-        print(number_in_power, counter)
-
+        number_in_power = in_power(number_in_power, x)
+        counter += 1
     return number_in_power
 
 
-print('number_in_power',my_func(3,5))
-print(3**4)
-print(3**5)
-print(3**6)
+print('number_in_power', my_func(3, 5))
+print('test number', 3 ** 5)
