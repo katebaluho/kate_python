@@ -131,6 +131,7 @@ def choise_of_computer(counter_steps, board):
     diagonal = list(map(lambda idx: board[idx][idx], range(0, board_len)))
     # diagonal_invert = list(map(lambda idx: board[idx][board_len - idx - 1], range(board_len - 1, -1, -1)))
     diagonal_invert = list(map(lambda idx: board[idx][board_len - idx - 1], range(board_len)))
+
     #проверяем наличие 2 символов
     def find_two_symbols(line, sign):
         return True if list(line).count(sign) == 2  and ('*' in line) else False
@@ -142,6 +143,7 @@ def choise_of_computer(counter_steps, board):
         'row': lambda idx_row,idx_element: idx_row * len(board)+idx_element+1,
         'col': lambda idx_row,idx_element: idx_row + len(board)*idx_element+1
     }
+    
     number_cell = None
 
     def control_cell(sign):
@@ -207,14 +209,12 @@ def game(player_info, board):
 
         if matrix_match(board):
             user_interface('win', name = name_player, step_number = counter_steps//2)
-            print("===ИТОГ===")
-            print_board(board)
             break
         if len(all_movies) == len(board)**2:
             user_interface('draw')
-            print("===ИТОГ===")
-            print_board(board)
             break
+    print("===ИТОГ===")
+    print_board(board)
 
 def main():
     user_interface("hello")
