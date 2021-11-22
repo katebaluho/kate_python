@@ -1,9 +1,10 @@
 import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
 from multiblog_orm import models
 
+
+db_url = "sqlite:///multiblog_db.db"
 
 class DataBase:
 
@@ -14,7 +15,10 @@ class DataBase:
 
 
 if __name__ == '__main__':
-    db_url = "sqlite:///multiblog_db.db"
+
     db = DataBase(db_url)
     print(1)
+
+
+
 
