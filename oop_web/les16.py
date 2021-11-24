@@ -22,7 +22,7 @@ status codes
 - DELETE
 """
 headers = {
-    "User-Agent": "Philip Kirkorov v.2",
+    "User-Agent": "Svetlana Loboda v.2",
 }
 # ?format[]=mm&format[]=ms&category[]=fruits_vegetables
 params = {
